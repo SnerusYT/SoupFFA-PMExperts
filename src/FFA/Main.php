@@ -120,7 +120,7 @@ class Main extends PluginBase implements Listener{
 		if($item->getId() == 282) {
 			$event->setCancelled(true);
 			$player->getInventory()->removeItem($item);
-			$player->setHealth(20);
+			$player->setHealth($player->getHealth() + 3;
 			$player->setFood(20);
 		}
 	}
